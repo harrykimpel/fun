@@ -1,0 +1,1 @@
+using System.Net;using Microsoft.AspNetCore.Mvc;public static async Task<string> Run(HttpRequest req){int s=2;int p=0;string r="";while(true){int c=0;for(int j=2;j<=s/2;j++){if(s%j==0){c++;}}if(c==0&&s!=1){p++;r+=s+"\n";if(p==256){break;}}s++;}return r;}
